@@ -4,7 +4,7 @@ provider "spotinst" {
 }
 
 provider "aws" {
-  region  = var.region
+  region  = "us-west-2"
 }
 
 provider "kubernetes" {
