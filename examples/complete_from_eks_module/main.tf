@@ -123,5 +123,5 @@ module "ocean-controller" {
 
   # Configuration.
   tolerations = []
-  cluster_identifier = local.name
+  cluster_identifier = local.shortname
 }
