@@ -104,7 +104,7 @@ module "ocean-aws-k8s" {
   depends_on = [module.eks]
 
   # Configuration
-  cluster_name                = local.name
+  cluster_name                = local.shortname
   region                      = "us-west-2"
   subnet_ids                  = module.vpc.private_subnets
   worker_instance_profile_arn = tolist(data.aws_iam_instance_profiles.profile.arns)[0]
