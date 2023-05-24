@@ -14,6 +14,8 @@ locals {
 
 resource "random_string" "random" {
   length = 8
+  special = false
+  upper = false
 }
 
 data "aws_availability_zones" "available" {}
